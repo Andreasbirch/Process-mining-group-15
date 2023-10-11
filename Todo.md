@@ -5,3 +5,5 @@ Prerequisites:
 2. Find the combination of recordingid and processid (Written somewhere in thesis). Cool stuff about how they are combined
 3. Find out how many processId for each recording
 4. Try and look at everything separately, every caseId separately
+
+DCR, Declaretive. Rum(Rule Miner) and Declare4py
