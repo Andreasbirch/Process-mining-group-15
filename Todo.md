@@ -1,3 +1,5 @@
+
+
 Prerequisites:
 
 0. Read thesis
@@ -7,3 +9,22 @@ Prerequisites:
 4. Try and look at everything separately, every caseId separately
 
 DCR, Declaretive. Rum(Rule Miner) and Declare4py
+
+# First iteration
+
+
+- [] Data preprocessing.
+
+
+- [] Modeling Alpha Alg.
+
+- [] Conformance Checking, K-folds
+
+
+Case ID = Recording ID
+Activity = concatenate(Application/Process Name) (maybe)
+Timestamp = Timestamp
+
+Next.
+Split according to connectors
+
