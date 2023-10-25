@@ -5,10 +5,13 @@
 import pandas as pd
 
 # Reading the data
-df = pd.read_csv("../../Recorded_Business_Tasks.csv")
+df = pd.read_excel("../../Recorded_Business_Tasks_Excel.xlsx")
+df2 = pd.read_csv("../../Recorded_Business_Tasks.csv")
 
 # print the count of null values in each column
 #print(df.isnull().sum())
+#print("Old")
+#print(df2.isnull().sum())
 
 # Find connectors in the data
 connectors = df.ApplicationProcessName.value_counts()
