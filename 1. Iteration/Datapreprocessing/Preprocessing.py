@@ -5,25 +5,54 @@
 import pandas as pd
 
 # Reading the data
-df = pd.read_excel("../../Recorded_Business_Tasks_Excel.xlsx")
-df2 = pd.read_csv("../../Recorded_Business_Tasks.csv")
+df = pd.read_csv("../../Initial.csv")
 
-# print the count of null values in each column
-#print(df.isnull().sum())
-#print("Old")
-#print(df2.isnull().sum())
+
+# Create and populate activity column in df by concatenating the ApplicationProcessName and StepName
+# if application process name is null, then populate with StepName
+df['Activity'] = df['ApplicationProcessName'].fillna('') + df['StepName'].fillna('')
+
+# Save new dataframe to csv
+#df.to_csv("../../1.IterationData.csv", index=False)
+
+# print stepName unique values and count
+#print(df.ProcessId.value_counts())
+
+print(len(df.RecordingId.unique()))
+# print connectors unquiue values and count, +1 only when there is a new recording id
+for connector in df.ApplicationProcessName.unique():
+    i = 0
+    for recId in df.RecordingId.unique():
+        if connector in df.loc[df['RecordingId'] == recId].ApplicationProcessName.unique():
+            i = i + 1
+    #print(str(connector) + ": " + str(i) + "Percent: " + str(i/len(df.RecordingId.unique())*100))
+
 
 # Find connectors in the data
-connectors = df.ApplicationProcessName.value_counts()
-#print(connector)
+connectors = df.ApplicationProcessName.unique()
+#print(connectors)
+
+# Remove nan from connectors
+connectors = connectors[~pd.isnull(connectors)]
 
 
-# Split the data into connector parts using dictionary
-dfs = dict(tuple(df.groupby('ApplicationProcessName')))
-#print(dfs.keys())
-#print(dfs['OneDrive'])
+# print all unique ApplicationProcessName that are in each recording id
+#for each connector, print all recording ids that contain that connector
+dict = {}
+for connector in connectors:
+    #print(connector)
+    #print(df.loc[df['ApplicationProcessName'] == connector].RecordingId.unique())
+    dict[str(connector)] = df.loc[df['ApplicationProcessName'] == connector].RecordingId.unique()
 
 
-# Generate new csv files for each connector
-#for connector in dfs.keys():
-#    dfs[connector].to_csv(connector + '.csv', index=False)
+# Create a csv file for each connector, and add all recording ids that contain that connector
+#for connector in dict:
+#    #print(connector)
+#    newDf = pd.DataFrame()
+#    for recId in dict[connector]:
+#        mask = df['RecordingId'] == recId
+#        tempDf = df[mask]
+#        newDf = pd.concat([newDf, tempDf])
+    
+    # Create a csv file for each connector stored in folder Splits
+#    newDf.to_csv("Splits/" + connector + ".csv", index=False)
