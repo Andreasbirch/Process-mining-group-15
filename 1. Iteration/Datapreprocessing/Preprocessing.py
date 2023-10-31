@@ -18,7 +18,24 @@ df['Activity'] = df['ApplicationProcessName'].fillna('') + df['StepName'].fillna
 # print stepName unique values and count
 #print(df.ProcessId.value_counts())
 
-print(len(df.RecordingId.unique()))
+lst = []
+for procid in df.ProcessId.unique():
+    i = 0
+    #print(procid)
+    for connector in df.ApplicationProcessName.unique():
+        if connector in df.loc[df['ProcessId'] == procid].ApplicationProcessName.unique():
+            if connector != 'nan':
+                i = i + 1
+    lst.append(i)
+
+# Count occurences of same number in list
+from collections import Counter
+print(Counter(lst))
+    
+
+
+
+
 # print connectors unquiue values and count, +1 only when there is a new recording id
 for connector in df.ApplicationProcessName.unique():
     i = 0
