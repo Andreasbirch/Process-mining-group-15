@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="Recording_49" />
+		<event>
+			<int key="StepId" value="0" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:18:07+00:00" />
+			<string key="StepName" value="Select menu option in window" />
+			<string key="StepDescription" value="Google Chrome - 2 running windows in Quick Launch Bar" />
+			<float key="ApplicationProcessName" value="nan" />
+			<float key="ApplicationParentWindowName" value="nan" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectMenuOption Control: appmask['Quick Launch Bar']['Google Chrome - 2 running windows']\n&quot;]" />
+			<float key="NextStepId" value="2.0" />
+			<string key="label_EventName" value="Go to Collaborative platform" />
+			<string key="label_EventId" value="Event_236" />
+			<string key="Activity" value="Select menu option in window" />
+			<string key="concept:name" value="Select menu option in window" />
+			<date key="time:timestamp" value="2022-03-02T09:18:07+00:00" />
+			<int key="@@index" value="0" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="1" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:18:09+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="List Item 'New Tab - Google Chrome' in List 'Task Switcher'" />
+			<float key="ApplicationProcessName" value="nan" />
+			<string key="ApplicationParentWindowName" value="Task Switcher" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['List \\'Task Switcher\\'']['List Item \\'New Tab - Google Chrome\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 53 OffsetY: -3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleLeft\n&quot;]" />
+			<float key="NextStepId" value="3.0" />
+			<string key="label_EventName" value="Go to Collaborative platform" />
+			<string key="label_EventId" value="Event_236" />
+			<string key="Activity" value="Click UI element in window" />
+			<string key="concept:name" value="Click UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:18:09+00:00" />
+			<int key="@@index" value="1" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="2" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:18:12+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'SharePoint' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'SharePoint\\'']\n&quot;]" />
+			<float key="NextStepId" value="4.0" />
+			<string key="label_EventName" value="Go to Collaborative platform" />
+			<string key="label_EventId" value="Event_236" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:18:12+00:00" />
+			<int key="@@index" value="2" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="3" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:18:16+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Hyperlink 'Project RoadMap' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Hyperlink \\'Project RoadMap\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 91 OffsetY: -2 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleLeft\n&quot;]" />
+			<float key="NextStepId" value="5.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:18:16+00:00" />
+			<int key="@@index" value="3" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="4" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:18:21+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Hyperlink 'Documents' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Hyperlink \\'Documents\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 68 OffsetY: 3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleLeft\n&quot;]" />
+			<float key="NextStepId" value="6.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:18:21+00:00" />
+			<int key="@@index" value="4" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="5" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:18:29+00:00" />
+			<string key="StepName" value="Select menu option in window" />
+			<string key="StepDescription" value="Menu Item 'New' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectMenuOption Control: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'New\\'']\n&quot;]" />
+			<float key="NextStepId" value="7.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromeSelect menu option in window" />
+			<string key="concept:name" value="chromeSelect menu option in window" />
+			<date key="time:timestamp" value="2022-03-02T09:18:29+00:00" />
+			<int key="@@index" value="5" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="6" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:19:08+00:00" />
+			<string key="StepName" value="Set checkbox state in window" />
+			<string key="StepDescription" value="Check Box 'General' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SetCheckboxState Checkbox: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Check Box \\'General\\''] CheckboxState: UIAutomation.CheckboxState.UnChecked\n&quot;]" />
+			<float key="NextStepId" value="8.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromeSet checkbox state in window" />
+			<string key="concept:name" value="chromeSet checkbox state in window" />
+			<date key="time:timestamp" value="2022-03-02T09:19:08+00:00" />
+			<int key="@@index" value="6" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="7" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:19:16+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Enter your new name' in Pane 'New Tab - Google Chrome - Person 1'; Text:'Employee Status'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Enter your new name\\''] Text: 'Employee Status' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="9.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:19:16+00:00" />
+			<int key="@@index" value="7" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="8" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:19:20+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Create' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Create\\'']\n&quot;]" />
+			<float key="NextStepId" value="10.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:19:20+00:00" />
+			<int key="@@index" value="8" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="9" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:19:26+00:00" />
+			<string key="StepName" value="Send keys" />
+			<string key="StepDescription" value="TextToSend:'{RShiftKey}(E)mployee {RShiftKey}(ST)atus{Return}1. {LShiftKey}Name - {RShiftKey}(A)ctive{Return}{LShiftKey}(K)runal - {RShiftKey}(A)ctive{Return}{LShiftKey}(N)ikunj{Back}j - {RShiftKey}(D)isable'" />
+			<float key="ApplicationProcessName" value="nan" />
+			<float key="ApplicationParentWindowName" value="nan" />
+			<string key="AutomationStep" value="['WAIT 2\n', &quot;MouseAndKeyboard.SendKeys TextToSend: '{RShiftKey}(E)mployee{Space}{RShiftKey}(ST)atus{Return}1.{Space}{LShiftKey}Name{Space}-{Space}{RShiftKey}(A)ctive{Return}{LShiftKey}(K)runal{Space}-{Space}{RShiftKey}(A)ctive{Return}{LShiftKey}(N)ikunj{Back}j{Space}-{Space}{RShiftKey}(D)isable'\n&quot;]" />
+			<float key="NextStepId" value="11.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="Send keys" />
+			<string key="concept:name" value="Send keys" />
+			<date key="time:timestamp" value="2022-03-02T09:19:26+00:00" />
+			<int key="@@index" value="9" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="10" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:07+00:00" />
+			<string key="StepName" value="Select tab in window" />
+			<string key="StepDescription" value="Tab Item 'Employee Status' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectTab Tab: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Tab Item \\'Employee Status\\'']\n&quot;]" />
+			<float key="NextStepId" value="12.0" />
+			<string key="label_EventName" value="Create a note" />
+			<string key="label_EventId" value="Event_237" />
+			<string key="Activity" value="chromeSelect tab in window" />
+			<string key="concept:name" value="chromeSelect tab in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:07+00:00" />
+			<int key="@@index" value="10" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="11" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:14+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Menu Item 'Sync' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'Sync\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: 18 OffsetY: 12 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="13.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:14+00:00" />
+			<int key="@@index" value="11" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="12" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:30+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Edit 'Enter your email address' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Edit \\'Enter your email address\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 12 OffsetY: 4 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="14.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:30+00:00" />
+			<int key="@@index" value="12" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="13" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:33+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Sign in' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Sign in\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: -35 OffsetY: 4 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="15.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:33+00:00" />
+			<int key="@@index" value="13" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="14" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:42+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Group 'Name ...  another account' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Group \\'Name ...  another account\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 78 OffsetY: -22 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleLeft\n&quot;]" />
+			<float key="NextStepId" value="16.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:42+00:00" />
+			<int key="@@index" value="14" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="15" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:43+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Enter the password for Email@Domain' in Window 'Microsoft OneDrive'; Text:P'password_secret_text'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Window \\'Microsoft OneDrive\\'']['Edit \\'Enter the password for Email@Domain\\''] Text: P'password_secret_text' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="17.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDrivePopulate text field in window" />
+			<string key="concept:name" value="OneDrivePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:43+00:00" />
+			<int key="@@index" value="15" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="16" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:20:51+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Sign in' 2 in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Sign in\\' 2']\n&quot;]" />
+			<float key="NextStepId" value="18.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDrivePress button in window" />
+			<string key="concept:name" value="OneDrivePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:20:51+00:00" />
+			<int key="@@index" value="16" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="17" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:10+00:00" />
+			<string key="StepName" value="Drag and drop UI element in window" />
+			<string key="StepDescription" value="Button 'Use this folder' in Button 'Next' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.DragAndDropElement MouseDownOffsetY: 8 MouseDownOffsetX: 3 RectangleEdgePointForMouseDown: UIAutomation.RectangleEdgePoint.TopCenter ControlToDrag: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Next\\''] MouseUpOffsetY: 4 MouseUpOffsetX: -10 RectangleEdgePointForMouseUp: UIAutomation.RectangleEdgePoint.TopCenter ControlToDropOver: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Use this folder\\''] ClickType: UIAutomation.DragAndDropClickType.LeftClick\n&quot;]" />
+			<float key="NextStepId" value="19.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveDrag and drop UI element in window" />
+			<string key="concept:name" value="OneDriveDrag and drop UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:10+00:00" />
+			<int key="@@index" value="17" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="18" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:16+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Next' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Next\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: -17 OffsetY: -3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="20.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:16+00:00" />
+			<int key="@@index" value="18" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="19" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:23+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Next' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Next\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: -17 OffsetY: -3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="21.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:23+00:00" />
+			<int key="@@index" value="19" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="20" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:29+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Next' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Next\\'']\n&quot;]" />
+			<float key="NextStepId" value="22.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDrivePress button in window" />
+			<string key="concept:name" value="OneDrivePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:29+00:00" />
+			<int key="@@index" value="20" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="21" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:33+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Later' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Later\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: -12 OffsetY: -3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter\n&quot;]" />
+			<float key="NextStepId" value="23.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:33+00:00" />
+			<int key="@@index" value="21" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="22" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:38+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Open my OneDrive folder' in Window 'Microsoft OneDrive'" />
+			<string key="ApplicationProcessName" value="OneDrive" />
+			<string key="ApplicationParentWindowName" value="Microsoft OneDrive" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'Microsoft OneDrive\\'']['Button \\'Open my OneDrive folder\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: -53 OffsetY: -4 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="24.0" />
+			<string key="label_EventName" value="Sync collaborative tool with local drive" />
+			<string key="label_EventId" value="Event_238" />
+			<string key="Activity" value="OneDriveClick UI element in window" />
+			<string key="concept:name" value="OneDriveClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:38+00:00" />
+			<int key="@@index" value="22" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="23" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:49+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'New Tab' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'New Tab\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: 0 OffsetY: 10 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopCenter\n&quot;]" />
+			<float key="NextStepId" value="25.0" />
+			<string key="label_EventName" value="Go to the cloud flow creation app " />
+			<string key="label_EventId" value="Event_239" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:49+00:00" />
+			<int key="@@index" value="23" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="24" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:54+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Address and search bar' in Pane 'New Tab - Google Chrome - Person 1'; Text:'power automate'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Address and search bar\\''] Text: 'power automate' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="26.0" />
+			<string key="label_EventName" value="Go to the cloud flow creation app " />
+			<string key="label_EventId" value="Event_239" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:54+00:00" />
+			<int key="@@index" value="24" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="25" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:55+00:00" />
+			<string key="StepName" value="Send keys" />
+			<string key="StepDescription" value="TextToSend:'{Return}'" />
+			<float key="ApplicationProcessName" value="nan" />
+			<float key="ApplicationParentWindowName" value="nan" />
+			<string key="AutomationStep" value="['WAIT 2\n', &quot;MouseAndKeyboard.SendKeys TextToSend: '{Return}'\n&quot;]" />
+			<float key="NextStepId" value="27.0" />
+			<string key="label_EventName" value="Go to the cloud flow creation app " />
+			<string key="label_EventId" value="Event_239" />
+			<string key="Activity" value="Send keys" />
+			<string key="concept:name" value="Send keys" />
+			<date key="time:timestamp" value="2022-03-02T09:21:55+00:00" />
+			<int key="@@index" value="25" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="26" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:21:58+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Hyperlink ' Power  ... rosoft.com' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Hyperlink \\' Power  ... rosoft.com\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 33 OffsetY: -5 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter\n&quot;]" />
+			<float key="NextStepId" value="28.0" />
+			<string key="label_EventName" value="Go to the cloud flow creation app " />
+			<string key="label_EventId" value="Event_239" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:21:58+00:00" />
+			<int key="@@index" value="26" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="27" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:03+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Hyperlink 'Sign in' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Hyperlink \\'Sign in\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: -20 OffsetY: 1 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="29.0" />
+			<string key="label_EventName" value="Go to the cloud flow creation app " />
+			<string key="label_EventId" value="Event_239" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:03+00:00" />
+			<int key="@@index" value="27" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="28" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:12+00:00" />
+			<string key="StepName" value="Select menu option in window" />
+			<string key="StepDescription" value="Menu Item 'My flows' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectMenuOption Control: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'My flows\\'']\n&quot;]" />
+			<float key="NextStepId" value="30.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeSelect menu option in window" />
+			<string key="concept:name" value="chromeSelect menu option in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:12+00:00" />
+			<int key="@@index" value="28" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="29" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:18+00:00" />
+			<string key="StepName" value="Select menu option in window" />
+			<string key="StepDescription" value="Menu Item 'Add new' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectMenuOption Control: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'Add new\\'']\n&quot;]" />
+			<float key="NextStepId" value="31.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeSelect menu option in window" />
+			<string key="concept:name" value="chromeSelect menu option in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:18+00:00" />
+			<int key="@@index" value="29" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="30" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:27+00:00" />
+			<string key="StepName" value="Select menu option in window" />
+			<string key="StepDescription" value="Menu Item 'Instant cloud flow—from blank' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectMenuOption Control: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'Instant cloud flow—from blank\\'']\n&quot;]" />
+			<float key="NextStepId" value="32.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeSelect menu option in window" />
+			<string key="concept:name" value="chromeSelect menu option in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:27+00:00" />
+			<int key="@@index" value="30" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="31" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:34+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Flow name' in Pane 'New Tab - Google Chrome - Person 1'; Text:'One note'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Flow name\\''] Text: 'One note' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="33.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:34+00:00" />
+			<int key="@@index" value="31" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="32" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:39+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Data Item 'Manually  ...  trigger a flow. ' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Data Item \\'Manually  ...  trigger a flow. \\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: 39 OffsetY: 16 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="34.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:39+00:00" />
+			<int key="@@index" value="32" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="33" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:22:55+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Hyperlink 'Create' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Hyperlink \\'Create\\''] ClickType: UIAutomation.ClickType.LeftClick OffsetX: -14 OffsetY: 5 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopCenter\n&quot;]" />
+			<float key="NextStepId" value="35.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:22:55+00:00" />
+			<int key="@@index" value="33" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="34" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:00+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button '+ New step' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'+ New step\\'']\n&quot;]" />
+			<float key="NextStepId" value="36.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:00+00:00" />
+			<int key="@@index" value="34" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="35" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:07+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Desktop flows' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Desktop flows\\'']\n&quot;]" />
+			<float key="NextStepId" value="37.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:07+00:00" />
+			<int key="@@index" value="35" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="36" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:11+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Run a flow  ...  Desktop flows' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Run a flow  ...  Desktop flows\\'']\n&quot;]" />
+			<float key="NextStepId" value="38.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:11+00:00" />
+			<int key="@@index" value="36" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="37" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:17+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Menu for Run  ...  for desktop' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Menu for Run  ...  for desktop\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: 2 OffsetY: 1 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter\n&quot;]" />
+			<float key="NextStepId" value="39.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:17+00:00" />
+			<int key="@@index" value="37" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="38" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:23+00:00" />
+			<string key="StepName" value="Select menu option in window" />
+			<string key="StepDescription" value="Menu Item '+Add new connection' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.SelectMenuOption Control: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'+Add new connection\\'']\n&quot;]" />
+			<float key="NextStepId" value="40.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeSelect menu option in window" />
+			<string key="concept:name" value="chromeSelect menu option in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:23+00:00" />
+			<int key="@@index" value="38" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="39" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:26+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="List Item in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['List Item'] ClickType: UIAutomation.ClickType.LeftClick OffsetX: -108 OffsetY: 3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter\n&quot;]" />
+			<float key="NextStepId" value="41.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:26+00:00" />
+			<int key="@@index" value="39" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="40" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:29+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Group in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Group'] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 97 OffsetY: 17 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="42.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:29+00:00" />
+			<int key="@@index" value="40" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="41" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:23:56+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Domain and username' in Pane 'New Tab - Google Chrome - Person 1'; Text:''" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Domain and username\\''] Text: '' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="43.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:23:56+00:00" />
+			<int key="@@index" value="41" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="42" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:00+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Open:' in Window 'Run'; Text:'cmd'" />
+			<string key="ApplicationProcessName" value="explorer" />
+			<string key="ApplicationParentWindowName" value="Run" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Window \\'Run\\'']['Edit \\'Open:\\''] Text: 'cmd' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="44.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="explorerPopulate text field in window" />
+			<string key="concept:name" value="explorerPopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:24:00+00:00" />
+			<int key="@@index" value="42" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="43" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:01+00:00" />
+			<string key="StepName" value="Send keys" />
+			<string key="StepDescription" value="TextToSend:'{Return}whoami{Return}'" />
+			<float key="ApplicationProcessName" value="nan" />
+			<float key="ApplicationParentWindowName" value="nan" />
+			<string key="AutomationStep" value="['WAIT 2\n', &quot;MouseAndKeyboard.SendKeys TextToSend: '{Return}whoami{Return}'\n&quot;]" />
+			<float key="NextStepId" value="45.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="Send keys" />
+			<string key="concept:name" value="Send keys" />
+			<date key="time:timestamp" value="2022-03-02T09:24:01+00:00" />
+			<int key="@@index" value="43" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="44" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:09+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Document 'Text Area' in Window 'C:\WINDOWS\system32\cmd.exe'" />
+			<string key="ApplicationProcessName" value="cmd" />
+			<string key="ApplicationParentWindowName" value="C:\WINDOWS\system32\cmd.exe" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\\'']['Document \\'Text Area\\''] ClickType: UIAutomation.ClickType.LeftButtonDown OffsetX: 133 OffsetY: 97 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="47.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="cmdClick UI element in window" />
+			<string key="concept:name" value="cmdClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:24:09+00:00" />
+			<int key="@@index" value="44" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="45" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:11+00:00" />
+			<string key="StepName" value="Send keys" />
+			<string key="StepDescription" value="TextToSend:'{LControlKey}({C})'" />
+			<float key="ApplicationProcessName" value="nan" />
+			<float key="ApplicationParentWindowName" value="nan" />
+			<string key="AutomationStep" value="['WAIT 2\n', &quot;MouseAndKeyboard.SendKeys TextToSend: '{C}'\n&quot;, 'WAIT 2\n', &quot;MouseAndKeyboard.SendKeys TextToSend: '{LControlKey}({C})'\n&quot;]" />
+			<float key="NextStepId" value="48.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="Send keys" />
+			<string key="concept:name" value="Send keys" />
+			<date key="time:timestamp" value="2022-03-02T09:24:11+00:00" />
+			<int key="@@index" value="45" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="46" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:12+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Document 'Text Area' in Window 'C:\WINDOWS\system32\cmd.exe'" />
+			<string key="ApplicationProcessName" value="cmd" />
+			<string key="ApplicationParentWindowName" value="C:\WINDOWS\system32\cmd.exe" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\\'']['Document \\'Text Area\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 11 OffsetY: 104 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="49.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="cmdClick UI element in window" />
+			<string key="concept:name" value="cmdClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:24:12+00:00" />
+			<int key="@@index" value="46" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="47" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:28+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Document 'Text Area' in Window 'C:\WINDOWS\system32\cmd.exe'" />
+			<string key="ApplicationProcessName" value="cmd" />
+			<string key="ApplicationParentWindowName" value="C:\WINDOWS\system32\cmd.exe" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Window \\'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\\'']['Document \\'Text Area\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 90 OffsetY: 90 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="50.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="cmdClick UI element in window" />
+			<string key="concept:name" value="cmdClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:24:28+00:00" />
+			<int key="@@index" value="47" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="48" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:33+00:00" />
+			<string key="StepName" value="Send keys" />
+			<string key="StepDescription" value="TextToSend:'{LControlKey}(){LControlKey}({C}){C}'" />
+			<float key="ApplicationProcessName" value="nan" />
+			<float key="ApplicationParentWindowName" value="nan" />
+			<string key="AutomationStep" value="['WAIT 2\n', &quot;MouseAndKeyboard.SendKeys TextToSend: '{LControlKey}(){LControlKey}({C}){C}'\n&quot;]" />
+			<float key="NextStepId" value="53.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="Send keys" />
+			<string key="concept:name" value="Send keys" />
+			<date key="time:timestamp" value="2022-03-02T09:24:33+00:00" />
+			<int key="@@index" value="48" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="49" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:51+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Domain and username' in Pane 'New Tab - Google Chrome - Person 1'; Text:'rkh-pc-23\\sunsh'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Domain and username\\''] Text: 'rkh-pc-23\\\\sunsh' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="54.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:24:51+00:00" />
+			<int key="@@index" value="49" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="50" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:24:55+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Password' in Pane 'New Tab - Google Chrome - Person 1'; Text:P'password_secret_text'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Password\\''] Text: P'password_secret_text' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="55.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:24:55+00:00" />
+			<int key="@@index" value="50" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="51" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:25:05+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Create' 2 in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Create\\' 2']\n&quot;]" />
+			<float key="NextStepId" value="57.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:25:05+00:00" />
+			<int key="@@index" value="51" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="52" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:25:25+00:00" />
+			<string key="StepName" value="Populate text field in window" />
+			<string key="StepDescription" value="Edit 'Password' in Pane 'New Tab - Google Chrome - Person 1'; Text:P'password_secret_text'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PopulateTextField TextField: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'Password\\''] Text: P'password_secret_text' Mode: UIAutomation.PopulateTextMode.Replace ClickType: UIAutomation.PopulateMouseClickType.SingleClick\n&quot;]" />
+			<float key="NextStepId" value="58.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePopulate text field in window" />
+			<string key="concept:name" value="chromePopulate text field in window" />
+			<date key="time:timestamp" value="2022-03-02T09:25:25+00:00" />
+			<int key="@@index" value="52" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="53" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:25:33+00:00" />
+			<string key="StepName" value="Press button in window" />
+			<string key="StepDescription" value="Button 'Create' 2 in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.PressButton Button: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Create\\' 2']\n&quot;]" />
+			<float key="NextStepId" value="59.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromePress button in window" />
+			<string key="concept:name" value="chromePress button in window" />
+			<date key="time:timestamp" value="2022-03-02T09:25:33+00:00" />
+			<int key="@@index" value="53" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="54" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:25:42+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Group 2 in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Group 2'] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: -75 OffsetY: -1 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="61.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:25:42+00:00" />
+			<int key="@@index" value="54" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="55" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:17+00:00" />
+			<string key="StepName" value="Drag and drop UI element in window" />
+			<string key="StepDescription" value="Button 'Save' in Edit 'FilesPath' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.DragAndDropElement MouseDownOffsetY: 2 MouseDownOffsetX: 108 RectangleEdgePointForMouseDown: UIAutomation.RectangleEdgePoint.TopLeft ControlToDrag: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Edit \\'FilesPath\\''] MouseUpOffsetY: -11 MouseUpOffsetX: -4 RectangleEdgePointForMouseUp: UIAutomation.RectangleEdgePoint.TopLeft ControlToDropOver: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Save\\''] ClickType: UIAutomation.DragAndDropClickType.LeftClick\n&quot;]" />
+			<float key="NextStepId" value="62.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeDrag and drop UI element in window" />
+			<string key="concept:name" value="chromeDrag and drop UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:17+00:00" />
+			<int key="@@index" value="55" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="56" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:24+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Text 'Your flow is ready to go. We recommend you test it' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Text \\'Your flow is ready to go. We recommend you test it\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 0 OffsetY: -3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter\n&quot;]" />
+			<float key="NextStepId" value="63.0" />
+			<string key="label_EventName" value="Create a flow for desktop flow" />
+			<string key="label_EventId" value="Event_240" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:24+00:00" />
+			<int key="@@index" value="56" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="57" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:29+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Menu Item 'Test' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Menu Item \\'Test\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: -11 OffsetY: 0 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleCenter\n&quot;]" />
+			<float key="NextStepId" value="64.0" />
+			<string key="label_EventName" value="Run the flow" />
+			<string key="label_EventId" value="Event_241" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:29+00:00" />
+			<int key="@@index" value="57" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="58" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:33+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Radio Button 'Test  ...  to trigger it.' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Radio Button \\'Test  ...  to trigger it.\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 16 OffsetY: 10 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.TopLeft\n&quot;]" />
+			<float key="NextStepId" value="65.0" />
+			<string key="label_EventName" value="Run the flow" />
+			<string key="label_EventId" value="Event_241" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:33+00:00" />
+			<int key="@@index" value="58" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="59" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:36+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Test' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Test\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 13 OffsetY: -10 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.BottomLeft\n&quot;]" />
+			<float key="NextStepId" value="66.0" />
+			<string key="label_EventName" value="Run the flow" />
+			<string key="label_EventId" value="Event_241" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:36+00:00" />
+			<int key="@@index" value="59" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="60" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:46+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Continue' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Continue\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 12 OffsetY: -6 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.BottomLeft\n&quot;]" />
+			<float key="NextStepId" value="67.0" />
+			<string key="label_EventName" value="Run the flow" />
+			<string key="label_EventId" value="Event_241" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:46+00:00" />
+			<int key="@@index" value="60" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="61" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:51+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Button 'Run flow' in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Button \\'Run flow\\''] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: 12 OffsetY: 3 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleLeft\n&quot;]" />
+			<float key="NextStepId" value="68.0" />
+			<string key="label_EventName" value="Run the flow" />
+			<string key="label_EventId" value="Event_241" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:51+00:00" />
+			<int key="@@index" value="61" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<int key="StepId" value="62" />
+			<string key="RecordingId" value="Recording_49" />
+			<string key="ProcessId" value="Process_21" />
+			<date key="TimeStamp" value="2022-03-02T09:26:58+00:00" />
+			<string key="StepName" value="Click UI element in window" />
+			<string key="StepDescription" value="Group 3 in Pane 'New Tab - Google Chrome - Person 1'" />
+			<string key="ApplicationProcessName" value="chrome" />
+			<string key="ApplicationParentWindowName" value="New Tab - Google Chrome - Person 1" />
+			<string key="AutomationStep" value="[&quot;UIAutomation.Click Element: appmask['Pane \\'New Tab - Google Chrome - Person 1\\'']['Group 3'] ClickType: UIAutomation.ClickType.LeftButtonUp OffsetX: -99 OffsetY: -12 MousePositionRelativeToElement: UIAutomation.RectangleEdgePoint.MiddleRight\n&quot;]" />
+			<float key="NextStepId" value="nan" />
+			<string key="label_EventName" value="Run the flow" />
+			<string key="label_EventId" value="Event_241" />
+			<string key="Activity" value="chromeClick UI element in window" />
+			<string key="concept:name" value="chromeClick UI element in window" />
+			<date key="time:timestamp" value="2022-03-02T09:26:58+00:00" />
+			<int key="@@index" value="62" />
+			<int key="@@case_index" value="0" />
+		</event>
+	</trace>
+</log>
