@@ -30,11 +30,18 @@ for filename in os.listdir(read_directory):
                 #Add recording to test dict and process to checkset
                 test_dict[recording] = grouped.get_group(recording) 
                 test_dict_processes.add(processId)
+
+                #Add the other recordings to the training dict (We assume recordingIds are unique and as such do no checking)
+                shuffleList.remove(recording)
+                for trainingRecording in shuffleList:
+                    train_dict[trainingRecording] = grouped.get_group(trainingRecording)
+
                 break
     
     
 
 print(test_dict.keys())
+print(train_dict.keys())
 
     
     
