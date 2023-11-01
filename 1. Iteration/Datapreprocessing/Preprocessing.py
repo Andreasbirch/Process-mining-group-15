@@ -30,7 +30,7 @@ for procid in df.ProcessId.unique():
 
 # Count occurences of same number in list
 from collections import Counter
-print(Counter(lst))
+#print(Counter(lst))
     
 
 
@@ -73,3 +73,13 @@ for connector in connectors:
     
     # Create a csv file for each connector stored in folder Splits
 #    newDf.to_csv("Splits/" + connector + ".csv", index=False)
+
+
+
+# Create files on different processIds
+for procId in df.ProcessId.unique():
+    newDf = pd.DataFrame()
+    mask = df['ProcessId'] == procId
+    tempDf = df[mask]
+    newDf = pd.concat([newDf, tempDf])
+    newDf.to_csv("ProcessId/" + procId + ".csv", index=False)
