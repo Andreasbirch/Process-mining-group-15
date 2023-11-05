@@ -5,7 +5,7 @@
 import pandas as pd
 
 # Reading the data
-df = pd.read_csv("../../Initial.csv")
+df = pd.read_csv("../../Recorded_Business_Tasks_Cleaned.csv")
 
 
 # Create and populate activity column in df by concatenating the ApplicationProcessName and StepName
