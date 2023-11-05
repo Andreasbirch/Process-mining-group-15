@@ -5,7 +5,7 @@
 import pandas as pd
 
 # Reading the data
-df = pd.read_csv("../../Recorded_Business_Tasks_Cleaned.csv")
+df = pd.read_csv("../../Recorded_Business_Tasks_Cleaned.csv", sep=';')
 
 
 # Create and populate activity column in df by concatenating the ApplicationProcessName and StepName
@@ -63,16 +63,16 @@ for connector in connectors:
 
 
 # Create a csv file for each connector, and add all recording ids that contain that connector
-#for connector in dict:
-#    #print(connector)
-#    newDf = pd.DataFrame()
-#    for recId in dict[connector]:
-#        mask = df['RecordingId'] == recId
-#        tempDf = df[mask]
-#        newDf = pd.concat([newDf, tempDf])
+for connector in dict:
+    #print(connector)
+    newDf = pd.DataFrame()
+    for recId in dict[connector]:
+        mask = df['RecordingId'] == recId
+        tempDf = df[mask]
+        newDf = pd.concat([newDf, tempDf])
     
     # Create a csv file for each connector stored in folder Splits
-#    newDf.to_csv("Splits/" + connector + ".csv", index=False)
+    newDf.to_csv("Splits/" + connector + ".csv", index=False)
 
 
 
