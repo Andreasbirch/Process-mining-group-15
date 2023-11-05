@@ -3,8 +3,8 @@ import pandas as pd
 import random
 read_directory = os.path.abspath('1. Iteration/Datapreprocessing/Splits')
 
-test_directory = os.path.abspath('Test-Train splits/Test')
-train_directory = os.path.abspath('Test-Train splits/Train')
+test_directory = os.path.abspath('1. Iteration/Test-Train splits/Test')
+train_directory = os.path.abspath('1. Iteration/Test-Train splits/Train')
 
 split_percentage = 0.15
 
@@ -54,16 +54,16 @@ for filename in os.listdir(read_directory):
 
 
 # Write csv file for each process:
-# for key in test_dict.keys():
-#     group = test_dict[key]
-#     processId = group.head(1)['ProcessId'].item()
-#     group.to_csv(os.path.join(test_directory, str(processId) + '.csv'), index=False)
+for key in test_dict.keys():
+    group = test_dict[key]
+    processId = group.head(1)['ProcessId'].item()
+    group.to_csv(os.path.join(test_directory, str(processId) + '.csv'), index=False)
 
 # # #Write csv file for each process:
-# for key in train_dict.keys():
-#     group = train_dict[key]
-#     processId = group.head(1)['ProcessId'].item()
-#     group.to_csv(os.path.join(train_directory, str(processId) + '.csv'), index=False, mode='a', header=False)
+for key in train_dict.keys():
+    group = train_dict[key]
+    processId = group.head(1)['ProcessId'].item()
+    group.to_csv(os.path.join(train_directory, str(processId) + '.csv'), index=False, mode='a', header=False)
 
 
 print(len(test_dict.keys()))
