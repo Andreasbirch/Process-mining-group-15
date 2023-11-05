@@ -5,12 +5,15 @@ from pm4py.algo.filtering.log.variants import variants_filter
 
 read_directory = os.path.abspath('1. Iteration/Test-Train splits/Train')
 for filename in os.listdir(read_directory):
-    file = os.path.join(read_directory, filename)
+    print(filename)
 
+
+for filename in os.listdir(read_directory):
+    print("File is", filename)
+    file = os.path.join(read_directory, filename)
     # load event log
     df = pd.read_csv(file)
-    mask = df['ProcessId'] == df.ProcessId.unique()[0]
-    df = df[mask]
+    print(df.columns)
     event_log = pm4py.format_dataframe(df, case_id='RecordingId',
                                             activity_key='Activity', timestamp_key='TimeStamp')
 
