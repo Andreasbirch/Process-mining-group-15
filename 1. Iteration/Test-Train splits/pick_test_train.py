@@ -54,20 +54,20 @@ for filename in os.listdir(read_directory):
 
 
 # Write csv file for each process:
-#for key in test_dict.keys():
+# for key in test_dict.keys():
 #    group = test_dict[key]
 #    processId = group.head(1)['ProcessId'].item()
 #    group.to_csv(os.path.join(test_directory, str(processId) + '.csv'), index=False)
 
 # # #Write csv file for each process:
-for key in train_dict.keys():
-    group = train_dict[key]
-    processId = group.head(1)['ProcessId'].item()
-    filepath = os.path.join(train_directory, str(processId) + '.csv')
-    if os.path.exists(filepath):
-        group.to_csv(filepath, index=False, mode='a', header=False)
-    else:
-        group.to_csv(filepath, index=False)
+# for key in train_dict.keys():
+#     group = train_dict[key]
+#     processId = group.head(1)['ProcessId'].item()
+#     filepath = os.path.join(train_directory, str(processId) + '.csv')
+#     if os.path.exists(filepath):
+#         group.to_csv(filepath, index=False, mode='a', header=False)
+#     else:
+        # group.to_csv(filepath, index=False)
 
 
 print(len(test_dict.keys()))
