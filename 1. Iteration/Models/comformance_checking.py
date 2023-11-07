@@ -27,8 +27,10 @@ for filename in os.listdir(train_directory):
     for testfilename in os.listdir(test_directory):
 
         testfile = os.path.join(test_directory, testfilename)
-        testlog = pd.read_csv(testfile)
-        result = pm4py.fitness_token_based_replay(event_log, net, initial_marking, final_marking)
+        test_df = pd.read_csv(testfile)
+        test_log = pm4py.format_dataframe(test_df, case_id="RecordingId", activity_key="Activity", timestamp_key="TimeStamp")
+        
+        result = pm4py.fitness_token_based_replay(test_log, net, initial_marking, final_marking)
         result_dict[filename[:-4]][testfilename[:-4]] = result
     
 with open("conformance_checking.json", "w") as outfile: 
