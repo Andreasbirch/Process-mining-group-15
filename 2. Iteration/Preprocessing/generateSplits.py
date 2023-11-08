@@ -9,7 +9,7 @@ import sklearn.model_selection
 import csv
 
 # Method Read file in Splits directory
-def readFiles():
+def generateSplits():
     
     files = os.listdir("../Splits")
     # Read each file in Splits directory
@@ -46,9 +46,5 @@ def readFiles():
             newDf2.to_csv("../Test-Train/Test/" + file, index=False)
 
 
-
-
-    return list
-
-lst=readFiles()
+generateSplits()
 
