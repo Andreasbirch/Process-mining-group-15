@@ -7,7 +7,8 @@ import pm4py as pm4py
 import pandas as pd
 import glob
 import os
-
+import matplotlib
+import matplotlib.pyplot as plt
 
 class Logs:
     def __init__(self, df, name):
@@ -88,7 +89,8 @@ def Performance(TrainingLogList, TestingLogList):
     return performance
 
 
-performance = Performance(train[:2], test[:2])
+# performance = Performance(train[:2], test[:2])
+performance = {'Teams': {'Teams': 0.6811369925638111, 'CoollePDFConverter': 0.4444444444444444}, 'CoollePDFConverter': {'Teams': 0.369080003755136, 'CoollePDFConverter': 0.972972972972973}}
 print(performance)
 
 
@@ -115,6 +117,39 @@ def RecommendationAlg(MinedModelList, LogForRecommendation, K, Conformance):
 
     return listOfBestConformance
 
+def CreateMatrix(dictionary, includeHeatmap = False):
+    """
+    Creates a matrix from a performance dictionary.
+    Optionally generates heatmap png using matplotlib
+    """
+    df = pd.DataFrame(dictionary)
+
+    #Save df to csv
+    df.to_csv("conformance_matrix.csv", sep=",")
+
+    if includeHeatmap:
+        #Inspiration: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
+        row_titles = df.columns.values.tolist()
+        col_titles = df.index.tolist()
+        data = df.values
+        
+        fig, ax = plt.subplots()
+        im = ax.imshow(data)
+        ax.set_yticks(np.arange(len(row_titles)), labels=row_titles)
+        ax.set_xticks(np.arange(len(col_titles)), labels=col_titles)
+
+        for i in range(len(row_titles)):
+            for j in range(len(col_titles)):
+                ax.text(j, i, data[i, j], ha="center", va="center", color="w")
+                
+        ax.set_title("Conformance matrix")
+        fig.tight_layout()
+        plt.savefig(fname="conformance_matrix_heatmap.png")
+        plt.show()
+
+
+
+CreateMatrix(performance, includeHeatmap=True)
 
 
 
