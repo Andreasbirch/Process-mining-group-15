@@ -9,6 +9,7 @@ import glob
 import os
 import matplotlib
 import matplotlib.pyplot as plt
+import math
 
 class Logs:
     def __init__(self, df, name):
@@ -49,11 +50,11 @@ def ProcessDiscoveryConformanceChecking(TrainEventlog, TestEventLog, DiscoveryAl
 
     # Get Training EventLog    
     if DiscoveryAlg == "IM":
-        net, im, fm = pm4py.discover_petri_net_inductive(TrainEventlog, noise_threshold=0.2)
+        net, im, fm = pm4py.discover_petri_net_inductive(TrainEventlog)
     elif DiscoveryAlg == "HM":
         net, im, fm = pm4py.discover_petri_net_heuristics(TrainEventlog, dependency_threshold=0.5)
     elif DiscoveryAlg == "IMF":
-        net, im, fm = pm4py.discover_petri_net_alpha(TrainEventlog)
+        net, im, fm = pm4py.discover_petri_net_inductive(TrainEventlog, noise_threshold=0.5)
     
     if ConformanceAlg == "token":
         conformance = pm4py.fitness_token_based_replay(TestEventLog, net, im, fm)
@@ -62,11 +63,12 @@ def ProcessDiscoveryConformanceChecking(TrainEventlog, TestEventLog, DiscoveryAl
         conformance = pm4py.conformance.fitness_alignments(TestEventLog, net, im, fm)
         conformance = conformance['averageFitness']
     
+    
     return conformance
 
 
-train, test = ReadTestAndTrainingLog() 
 
+#ProcessDiscoveryConformanceChecking(train[0].df, test[0].df, "IM", "token")
 
 
 #Alg 2: By having the train and test lists containing all the train and test logs, and discovery and
@@ -74,14 +76,12 @@ train, test = ReadTestAndTrainingLog()
 #and apply the first algorithm 1 on the logs (codes A.1, A.3). The returned value will be a
 #dictionary containing the conformance fitness value among the train models and the test
 #logs
-def Performance(TrainingLogList, TestingLogList):
-    discovery = "IM"
-    conformance = "alignments"
+def Performance(TrainingLogList, TestingLogList, discovery, conformance):
 
     performance = {}
 
     for count, logTraining in enumerate(TrainingLogList):
-        print("We are now at logTranining file number: " + str(count))
+        print("Training log: " + str(count+1/(len(TrainingLogList)+1)*100) + "% done")
         performance[logTraining.name] = {}
         for logTesting in TestingLogList:
             performance[logTraining.name][logTesting.name] = ProcessDiscoveryConformanceChecking(logTraining.df, logTesting.df, discovery, conformance)
@@ -89,21 +89,41 @@ def Performance(TrainingLogList, TestingLogList):
     return performance
 
 
-# performance = Performance(train[:2], test[:2])
-performance = {'Teams': {'Teams': 0.6811369925638111, 'CoollePDFConverter': 0.4444444444444444}, 'CoollePDFConverter': {'Teams': 0.369080003755136, 'CoollePDFConverter': 0.972972972972973}}
-print(performance)
+#performance = Performance(train, test)
+#performance = {'Teams': {'Teams': 0.6811369925638111, 'CoollePDFConverter': 0.4444444444444444}, 'CoollePDFConverter': {'Teams': 0.369080003755136, 'CoollePDFConverter': 0.972972972972973}}
+#print(performance)
 
 
-def save_dict(dictionary):
-	df = pd.DataFrame(dictionary)
+def save_dict(dictionary, discAlg, confAlg):
+    df = pd.DataFrame()
+    # For loop that iterate through the dictionary
+    # Uses keys as column and names and inner keys as rows.
+    # The values are added to the dataframe
+    print(dictionary)
+    for key in dictionary.keys():
+        for inner_key in dictionary[key].keys():
+            df.loc[key, inner_key] = dictionary[key][inner_key]
     
-	df.to_csv('output_all.csv', index=False)
+    # For each column in df, get max index and value
+    max_index = df.idxmax(axis=1)
+    # Save df to csv with index
+    df.to_csv('output_' + str(discAlg) + '_'+ (confAlg)+ '.csv', index=True)
+    
 
-	# Maximum value from each column
-	max_values_df = pd.DataFrame(df.apply(max)).transpose()
-	max_values_df.to_csv('max.csv', index=False)
+def CombineAll():
+    train, test = ReadTestAndTrainingLog()
+    DiscAlgs = ["IMF"]
+    ConfAlgs = ["alignments"]
+    for discAlg in DiscAlgs:
+        for confAlg in ConfAlgs:
+            
+            performance = Performance(train, test, discAlg, confAlg)
+            save_dict(performance, discAlg, confAlg)
+            
+    
+CombineAll()
 
-save_dict(performance)
+
 
 # Alg 3: Recommendation Algorithm. 
 def RecommendationAlg(MinedModelList, LogForRecommendation, K, Conformance):
@@ -117,39 +137,36 @@ def RecommendationAlg(MinedModelList, LogForRecommendation, K, Conformance):
 
     return listOfBestConformance
 
-def CreateMatrix(dictionary, includeHeatmap = False):
-    """
-    Creates a matrix from a performance dictionary.
-    Optionally generates heatmap png using matplotlib
-    """
-    df = pd.DataFrame(dictionary)
+
+# def CreateMatrix(dictionary, includeHeatmap = False):
+    
+#    Creates a matrix from a performance dictionary.
+#    Optionally generates heatmap png using matplotlib
+    
+#    df = pd.DataFrame(dictionary)
 
     #Save df to csv
-    df.to_csv("conformance_matrix.csv", sep=",")
+#    df.to_csv("conformance_matrix.csv", sep=",")
 
-    if includeHeatmap:
-        #Inspiration: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
-        row_titles = df.columns.values.tolist()
-        col_titles = df.index.tolist()
-        data = df.values
+#    if includeHeatmap:
+#        #Inspiration: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
+#        row_titles = df.columns.values.tolist()
+#        col_titles = df.index.tolist()
+#        data = df.values
         
-        fig, ax = plt.subplots()
-        im = ax.imshow(data)
-        ax.set_yticks(np.arange(len(row_titles)), labels=row_titles)
-        ax.set_xticks(np.arange(len(col_titles)), labels=col_titles)
+#        fig, ax = plt.subplots()
+#        im = ax.imshow(data)
+#        ax.set_yticks(np.arange(len(row_titles)), labels=row_titles)
+#        ax.set_xticks(np.arange(len(col_titles)), labels=col_titles)
 
-        for i in range(len(row_titles)):
-            for j in range(len(col_titles)):
-                ax.text(j, i, data[i, j], ha="center", va="center", color="w")
+#        for i in range(len(row_titles)):
+#            for j in range(len(col_titles)):
+#                ax.text(j, i, math.round(data[i, j],2), ha="center", va="center", color="w")
                 
-        ax.set_title("Conformance matrix")
-        fig.tight_layout()
-        plt.savefig(fname="conformance_matrix_heatmap.png")
-        plt.show()
-
-
-
-CreateMatrix(performance, includeHeatmap=True)
+#        ax.set_title("Conformance matrix")
+#        fig.tight_layout()
+#        plt.savefig(fname="conformance_matrix_heatmap.png")
+#        plt.show() """
 
 
 
