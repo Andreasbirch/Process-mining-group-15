@@ -63,7 +63,6 @@ def ProcessDiscoveryConformanceChecking(TrainEventlog, TestEventLog, DiscoveryAl
         conformance = pm4py.conformance.fitness_alignments(TestEventLog, net, im, fm)
         conformance = conformance['averageFitness']
     
-    
     return conformance
 
 
@@ -112,11 +111,10 @@ def save_dict(dictionary, discAlg, confAlg):
 
 def CombineAll():
     train, test = ReadTestAndTrainingLog()
-    DiscAlgs = ["IMF"]
-    ConfAlgs = ["alignments"]
+    DiscAlgs = ["IM","IMF", "HM"]
+    ConfAlgs = ["token","alignments"]
     for discAlg in DiscAlgs:
         for confAlg in ConfAlgs:
-            
             performance = Performance(train, test, discAlg, confAlg)
             save_dict(performance, discAlg, confAlg)
             
