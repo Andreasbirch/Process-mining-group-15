@@ -136,35 +136,5 @@ def RecommendationAlg(MinedModelList, LogForRecommendation, K, Conformance):
     return listOfBestConformance
 
 
-# def CreateMatrix(dictionary, includeHeatmap = False):
-    
-#    Creates a matrix from a performance dictionary.
-#    Optionally generates heatmap png using matplotlib
-    
-#    df = pd.DataFrame(dictionary)
-
-    #Save df to csv
-#    df.to_csv("conformance_matrix.csv", sep=",")
-
-#    if includeHeatmap:
-#        #Inspiration: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
-#        row_titles = df.columns.values.tolist()
-#        col_titles = df.index.tolist()
-#        data = df.values
-        
-#        fig, ax = plt.subplots()
-#        im = ax.imshow(data)
-#        ax.set_yticks(np.arange(len(row_titles)), labels=row_titles)
-#        ax.set_xticks(np.arange(len(col_titles)), labels=col_titles)
-
-#        for i in range(len(row_titles)):
-#            for j in range(len(col_titles)):
-#                ax.text(j, i, math.round(data[i, j],2), ha="center", va="center", color="w")
-                
-#        ax.set_title("Conformance matrix")
-#        fig.tight_layout()
-#        plt.savefig(fname="conformance_matrix_heatmap.png")
-#        plt.show() """
-
 
 
