@@ -12,8 +12,6 @@ event_log = pm4py.format_dataframe(df, case_id='RecordingId',
 
 
 
-
-
 #print(event_log)
 # Writing xes file
 #pm4py.write_xes(event_log, "test.xes")
