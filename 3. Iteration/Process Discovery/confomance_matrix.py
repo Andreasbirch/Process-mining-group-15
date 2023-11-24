@@ -19,16 +19,11 @@ def CreateMatrix(dataframe, name, includeHeatmap = False):
         #Inspiration: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
         row_titles = df.columns.values.tolist()
         row_titles = row_titles[1:]
-        #print(row_titles)
         col_titles = df.index.tolist()
-        # col_titles = df['Unnamed: 0'].tolist()
         
         #Remove first column
         df = df.drop(df.columns[0], axis=1)
         data = df.values
-        #print(df.shape)
-        #print(data.shape)
-        
         
         fig, ax = plt.subplots()
         im = ax.imshow(data)

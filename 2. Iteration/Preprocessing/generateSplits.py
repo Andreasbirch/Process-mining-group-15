@@ -3,21 +3,18 @@
 # Imports
 import pandas as pd
 import os
-import random
-import shutil
 import sklearn.model_selection
-import csv
 
-# Method Read file in Splits directory
 def generateSplits():
+    """
+    Generates test and training datasets from a set of event logs for the different connectors
+    Test/training sets are generated with a ratio of 20/80
+    """
     
     files = os.listdir("../Splits")
     # Read each file in Splits directory
     for file in files:
         df = pd.read_csv('../Splits/'+ str(file))
-        
-        #print(file)
-        #print(len(df['RecordingId'].unique()))
         
         # Generate list of dataframes for each RecordingId
         list = []
