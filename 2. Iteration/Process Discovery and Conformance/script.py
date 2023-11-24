@@ -134,6 +134,7 @@ CombineAll()
 
 
 # Alg 3: Recommendation Algorithm. 
+# Was never used, but was intended to be used to recommend a model to a log
 def RecommendationAlg(MinedModelList, LogForRecommendation, K, Conformance):
     maxConformance = set()
 
