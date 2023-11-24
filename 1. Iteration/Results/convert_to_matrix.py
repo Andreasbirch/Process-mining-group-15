@@ -1,7 +1,7 @@
 import json
-import math
 import numpy as np
 
+#Converts a json object of test processes and train processes to a matrix and saves it as a csv.
 with open('conformance_checking.json') as json_file:
     data = json.load(json_file)
     arr = np.empty(shape=(51, 51))
