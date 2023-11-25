@@ -14,11 +14,11 @@ This repository contains the code and data utilized in our process mining projec
 ### Tech stack
 Throughout our exploration the following tools and libraries were used to format, model and validate the data.
 * [Python](https://docs.python.org/3/)
-* [PM4PY](https://pm4py.fit.fraunhofer.de/static/assets/api/2.7.8/index.html "PM4PY's Documentation")
-* [Pandas]( https://pandas.pydata.org/ "Pandas Documentation")
-* [Scikit]( https://scikit-learn.org/stable/ "Scikit Documentation")
+  * [PM4PY](https://pm4py.fit.fraunhofer.de/static/assets/api/2.7.8/index.html "PM4PY's Documentation")
+  * [Pandas]( https://pandas.pydata.org/ "Pandas Documentation")
+  * [Scikit]( https://scikit-learn.org/stable/ "Scikit Documentation")
+  * [NumPy](https://numpy.org/doc/stable/)
 * [Disco]( https://fluxicon.com/disco/ "Disco Documentation")
-* [NumPy](https://numpy.org/doc/stable/)
 
 # Methodology
 The methodology employed in this project embraced an iterative process, continuously cycling through stages like planning, design, development, and evaluation within the context of process mining. Starting with a data set, each iteration involved spiraling through these stages until satisfactory answers were obtained or new questions emerged.
