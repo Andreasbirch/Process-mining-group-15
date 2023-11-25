@@ -1,7 +1,6 @@
 # Process Mining Project
 **Authors:** 
-Jeppe Mikkelsen (s204708)
-Andreas Birch (s194614), Andreas Kanneworff (s194595), Caroline Bjørch Fallesen (s194570), Indre Aruodziute, (s222958), Jacob Hansen (s194617).
+Jeppe Mikkelsen (s204708), Andreas Birch (s194614), Andreas Kanneworff (s194595), Caroline Bjørch Fallesen (s194570), Indre Aruodziute, (s222958), Jacob Hansen (s194617).
 
 ## Microsoft RPA
 This repository contains the code and data utilized in our process mining project course (02296) at DTU. The investigation undertaken aimed to address the following research questions, in which we investigate the possible usecase of process mining techniques to make a recommender system.
@@ -14,7 +13,7 @@ This repository contains the code and data utilized in our process mining projec
 
 ### Tech stack
 Throughout our exploration the following libraries were used for format, model and validate the data.
-
+* [Python](https://docs.python.org/3/)
 * [PM4PY](https://pm4py.fit.fraunhofer.de/static/assets/api/2.7.8/index.html "PM4PY's Documentation")
 * [Pandas]( https://pandas.pydata.org/ "Pandas Documentation")
 * [Scikit]( https://scikit-learn.org/stable/ "Scikit Documentation")
@@ -25,7 +24,7 @@ Throughout our exploration the following libraries were used for format, model a
 The methodology employed in this project embraced an iterative process, continuously cycling through stages like planning, design, development, and evaluation within the context of process mining. Starting with a data set, each iteration involved spiraling through these stages until satisfactory answers were obtained or new questions emerged.
 
 # Code
-The project is split into numerous folder of each iteration, in which Preprocessing, Process Discovery and Conformance checking has occured.
+The project is split into numerous folders of each iteration, in which Preprocessing, Process Discovery and Conformance checking has occured.
 
 # Results and Presentation
 The results presented in the report can be seen through this link to our excel sheet, and non formatted in the .csv files found throughout or iterations
