@@ -19,6 +19,7 @@ Throughout our exploration the following libraries were used for format, model a
 * [Pandas]( https://pandas.pydata.org/ "Pandas Documentation")
 * [Scikit]( https://scikit-learn.org/stable/ "Scikit Documentation")
 * [Disco]( https://fluxicon.com/disco/ "Disco Documentation")
+* [NumPy](https://numpy.org/doc/stable/)
 
 # Methodology
 The methodology employed in this project embraced an iterative process, continuously cycling through stages like planning, design, development, and evaluation within the context of process mining. Starting with a data set, each iteration involved spiraling through these stages until satisfactory answers were obtained or new questions emerged.
