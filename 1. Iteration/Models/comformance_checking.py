@@ -21,7 +21,6 @@ for filename in os.listdir(train_directory):
 
     # Do process discovery Alpha Miner
     net, initial_marking, final_marking = pm4py.discover_petri_net_alpha(event_log)
-    #pm4py.view_petri_net(net, initial_marking, final_marking)
 
     #Compare each test log to the new model
     for testfilename in os.listdir(test_directory):

@@ -12,6 +12,7 @@ test_dict_processes = set()
 test_dict = {}
 train_dict = {}
 
+#Reads a list of split eventlogs by connector, and generates a test and training dataset from these.
 for filename in os.listdir(read_directory):
     f = os.path.join(read_directory, filename)
     df = pd.read_csv(f)
@@ -40,7 +41,6 @@ for filename in os.listdir(read_directory):
     
     recordsToTrain = [i for i in shuffleList if i not in recordsToTest and i not in test_dict.keys()] #Records to train are all records not in the test dict
     
-    # print(recordsToTest)
     #Add this files test record to out dict. Remove from training out dict if duplicate
     for record in recordsToTest:
         if record not in test_dict.keys():
@@ -51,29 +51,5 @@ for filename in os.listdir(read_directory):
     #Add this files training records to out dict.
     for record in recordsToTrain:
         train_dict[record] = grouped.get_group(record)
-
-
-# Write csv file for each process:
-# for key in test_dict.keys():
-#    group = test_dict[key]
-#    processId = group.head(1)['ProcessId'].item()
-#    group.to_csv(os.path.join(test_directory, str(processId) + '.csv'), index=False)
-
-# # #Write csv file for each process:
-# for key in train_dict.keys():
-#     group = train_dict[key]
-#     processId = group.head(1)['ProcessId'].item()
-#     filepath = os.path.join(train_directory, str(processId) + '.csv')
-#     if os.path.exists(filepath):
-#         group.to_csv(filepath, index=False, mode='a', header=False)
-#     else:
-        # group.to_csv(filepath, index=False)
-
-
-print(len(test_dict.keys()))
-print(len(train_dict.keys()))
-
-# printOcc(test_dict)
-
     
     

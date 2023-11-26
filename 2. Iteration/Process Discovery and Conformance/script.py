@@ -7,17 +7,20 @@ import pm4py as pm4py
 import pandas as pd
 import glob
 import os
-import matplotlib
 import matplotlib.pyplot as plt
-import math
 
 class Logs:
     def __init__(self, df, name):
         self.df = df
         self.name = name
 
-# Read all test logs files and put them in a list
 def ReadTestAndTrainingLog():
+    """
+    Reads all test and training log files
+
+    Returns:
+    A list of Dataframes for each event log for tests and training
+    """
     trainEventLogList = []
     testEventLogList = []
 
@@ -43,10 +46,16 @@ def ReadTestAndTrainingLog():
     return trainEventLogList, testEventLogList
 
 
-
-# Alg 1:
-# Main function for process discovery and conformance checking
 def ProcessDiscoveryConformanceChecking(TrainEventlog, TestEventLog, DiscoveryAlg, ConformanceAlg):
+    """
+    Main function for process discovery and conformance checking
+
+    Generates a petri net from a train and test event log
+    Applies a discovery algorithm determined by DiscoveryAlg, and a conformance checking method determined by ConformanceAlg
+    
+    Returns:
+    A conformance value
+    """
 
     # Get Training EventLog    
     if DiscoveryAlg == "IM":
@@ -66,17 +75,15 @@ def ProcessDiscoveryConformanceChecking(TrainEventlog, TestEventLog, DiscoveryAl
     return conformance
 
 
-
-#ProcessDiscoveryConformanceChecking(train[0].df, test[0].df, "IM", "token")
-
-
-#Alg 2: By having the train and test lists containing all the train and test logs, and discovery and
-#conformance checking algorithms as inputs, we iterate through the train and test logs lists
-#and apply the first algorithm 1 on the logs (codes A.1, A.3). The returned value will be a
-#dictionary containing the conformance fitness value among the train models and the test
-#logs
 def Performance(TrainingLogList, TestingLogList, discovery, conformance):
+    """
+    Generates a conformance matrix by a list of training logs and a list of testing logs,
+    applying the ProcessDiscoveryConformanceChecking() function on every event log, 
+    with a specifying parameter to select the discovery and conformance algorithm
 
+    Returns:
+    A dictionary containing the conformance matrix with a set of entries in the following order: {training:{test:conformance}}
+    """
     performance = {}
 
     for count, logTraining in enumerate(TrainingLogList):
@@ -88,12 +95,10 @@ def Performance(TrainingLogList, TestingLogList, discovery, conformance):
     return performance
 
 
-#performance = Performance(train, test)
-#performance = {'Teams': {'Teams': 0.6811369925638111, 'CoollePDFConverter': 0.4444444444444444}, 'CoollePDFConverter': {'Teams': 0.369080003755136, 'CoollePDFConverter': 0.972972972972973}}
-#print(performance)
-
-
 def save_dict(dictionary, discAlg, confAlg):
+    """
+    Saves a conformance matrix dictionary to a csv file
+    """
     df = pd.DataFrame()
     # For loop that iterate through the dictionary
     # Uses keys as column and names and inner keys as rows.
@@ -103,13 +108,18 @@ def save_dict(dictionary, discAlg, confAlg):
         for inner_key in dictionary[key].keys():
             df.loc[key, inner_key] = dictionary[key][inner_key]
     
-    # For each column in df, get max index and value
-    max_index = df.idxmax(axis=1)
     # Save df to csv with index
     df.to_csv('output_' + str(discAlg) + '_'+ (confAlg)+ '.csv', index=True)
     
 
 def CombineAll():
+    """
+    Reads test- and training event logs, 
+    then applies every combination of discovery and conformance algorithms on the logs using the Performance() function
+    
+    Result:
+    A conformance matrix is generated for each discovery and conformance algorithm, saved in .csv files
+    """
     train, test = ReadTestAndTrainingLog()
     DiscAlgs = ["IM","IMF", "HM"]
     ConfAlgs = ["token","alignments"]
@@ -124,6 +134,7 @@ CombineAll()
 
 
 # Alg 3: Recommendation Algorithm. 
+# Was never used, but was intended to be used to recommend a model to a log
 def RecommendationAlg(MinedModelList, LogForRecommendation, K, Conformance):
     maxConformance = set()
 

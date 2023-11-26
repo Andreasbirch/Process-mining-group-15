@@ -10,8 +10,13 @@ class Logs:
         self.df = df
         self.name = name
 
-# Read all test logs files and put them in a list
 def ReadTestAndTrainingLog():
+    """
+    Reads all test and training log files
+
+    Returns:
+    A list of Dataframes for each event log for tests and training
+    """
     trainEventLogList = []
     testEventLogList = []
 
@@ -40,6 +45,11 @@ train, test = ReadTestAndTrainingLog()
 
 performance = {}
 
+#Create a transformation matrix
+#Loop through each training event log and generate a DECLARE model
+#Loop through each test event, and perform DECLARE conformance check with the training model on the test log.
+#Save the conformance value in a dict in the form of a set of entries: {traing:{test:conformance}}
+#Convert conformance matrix dictionary to .csv file and save.
 for train_count, logTraining in enumerate(train):
     # Read data in csv file as dataframe, create event log.
     df = logTraining.df
@@ -58,6 +68,7 @@ for train_count, logTraining in enumerate(train):
         df = df[mask]
         test_log = pm4py.format_dataframe(df, case_id='RecordingId', activity_key='Activity', timestamp_key='TimeStamp')
 
+        #Apply conformance checking on test log using declare model from training log
         conformance = pm4py.conformance_declare(test_log, declare_model)
         performance[logTraining.name][logTesting.name] = conformance[0]['dev_fitness']
 
