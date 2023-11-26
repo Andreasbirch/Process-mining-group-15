@@ -4,14 +4,13 @@ from scipy.stats import zscore
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-import numpy as np
+import csv
 
 discovery_algorithms = ["IM", "HM", "IMF", "DEC"]
-# conformance_algorithms = ["token", "alignments"]
 conformance_algorithms = ["token"]
 
-
+# Fitness results for each discovery algorithm
+# Each row represents a model and each column represents a connector
 def get_fitness_results():
 
     fitness_results = {}
@@ -28,7 +27,7 @@ def get_fitness_results():
         df = pd.read_csv(file_path, index_col=0, decimal=',')  
         df = df.apply(lambda x: pd.to_numeric(x.str.replace(',', '.'), errors='coerce'))
 
-        # print(df)
+        # Calculate mean and std values for each column
         mean_values = df.mean()
         std_values = df.std()
 
@@ -69,11 +68,7 @@ def cor_analysis(fitness_results):
     plot_and_save_correlation_matrix(hm_correlation_matrix, "HM Fitness")
     plot_and_save_correlation_matrix(imf_correlation_matrix, "IMF Fitness")
 
-    # combined_fitness = pd.concat([im_fitness, hm_fitness, imf_fitness], axis=1)
-    # combined_correlation_matrix = combined_fitness.corr()
-    # plot_and_save_correlation_matrix(combined_correlation_matrix, "Combined Fitness")
-
-    return im_correlation_matrix, hm_correlation_matrix, imf_correlation_matrix#, combined_correlation_matrix
+    return im_correlation_matrix, hm_correlation_matrix, imf_correlation_matrix
 
 def plot_and_save_correlation_matrix(correlation_matrix, title):
 
@@ -134,11 +129,12 @@ def p_values(fitness_results):
     return p_values_df
 
 
-# Outliers represent instances where the process executions deviate significantly from the expected or modeled behavior according to the given discovery algorithms. 
+# Outlier detection
 def find_outliers(fitness_results):
 
     all_outliers_df = pd.DataFrame()
 
+    # Iterate through each discovery algorithm
     for model_name, model_fitness in fitness_results.items():
         z_scores = zscore(model_fitness)
 
@@ -158,13 +154,14 @@ def find_outliers(fitness_results):
 
     return all_outliers_df
 
+#  Rank each column individually and sum the ranks to find the best connectors
 def get_best_connectors(fitness_results):
 
     im_fitness = fitness_results['IM']
     hm_fitness = fitness_results['HM']
     imf_fitness = fitness_results['IMF']
     dec_fitness = fitness_results['DEC']
-    print(dec_fitness)
+
     data = [im_fitness, hm_fitness, imf_fitness, dec_fitness]
     result_df = pd.DataFrame(index=dec_fitness.index)
     for model, d in zip(['IM', 'HM', 'IMF', 'DEC'], data):
@@ -183,60 +180,73 @@ def get_best_connectors(fitness_results):
 
     return result_df
 
-def calculate_accuracy(fitness_df):
+# Top n analysis
+def top_n_analysis(fitness_results):
+
+    output_csv = 'Results/top_n_analysis.csv'
+
+    for top_n in [1, 3, 6, 9]:
+        print(f'top k = {top_n}')
+        diagonal_analysis_to_csv(fitness_results, top_n, output_csv)
+
+# Save top n analysis results to CSV file
+def diagonal_analysis_to_csv(fitness_results, top_n, output_csv):
+
+
+    file_exists = os.path.exists(output_csv)
+
+    with open(output_csv, 'a', newline='') as csvfile:
+        fieldnames = ['Model Name', 'top_n', f'Accuracy']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        for model_name, model_fitness in fitness_results.items():
+            acc = calculate_accuracy(model_fitness, top_n)
+            writer.writerow({'Model Name': model_name, 'top_n': top_n, f'Accuracy': acc})
+            print(f"Accuracy for {model_name} (top {top_n}): {acc}")
+
+
+def diagonal_analysis(fitness_results, top_n):
+
+    for model_name, model_fitness in fitness_results.items():
+
+        acc = calculate_accuracy(model_fitness,top_n)
+        print(f"Accuracy for {model_name}: {acc}")
+
+def calculate_accuracy(fitness_df, top_n):
     correct_count = 0
     total_count = 0
-    top_n = 3
 
     for col in fitness_df.columns:
         diagonal_value = fitness_df.at[col, col]
-        # Highest fitness from each column
-        # max_column_value = fitness_df[col].max()
-        
+
         top_n_values = fitness_df[col].nlargest(top_n).values
         
         if diagonal_value in top_n_values:
             correct_count += 1
-            # print(col)
         total_count += 1
 
-    # print(correct_count, total_count)
     accuracy_percentage = (correct_count / total_count) * 100
+
     return accuracy_percentage
 
-def analyse_diagonal_percentage(fitness_results):
-    results = {}
 
-    for connector, fitness_df in fitness_results.items():
-        accuracy_percentage = calculate_accuracy(fitness_df)
-        results[connector] = accuracy_percentage
-
-    result_df = pd.DataFrame(list(results.items()), columns=['Model', 'Accuracy_Percentage'])
-    result_df.to_csv('Results/diagonal_accuracy.csv', index=False)
-
-    return result_df
-
-
-# Running data analysis functions
 
 fitness_results, summary_results = get_fitness_results()
-# get_best_connectors(fitness_results)
-# analyse_diagonal_percentage(fitness_results)
+
 
 # Print mean and std values. Same values are saved to CSV file
-# for discovery_alg, mean_values in summary_results['mean'].items():
-#     print(f"Mean values for {discovery_alg}:")
-#     print(mean_values)
-# for discovery_alg, std_values in summary_results['std'].items():
-#     print(f"Standard deviation values for {discovery_alg}:")
-#     print(std_values)
+for discovery_alg, mean_values in summary_results['mean'].items():
+    print(f"Mean values for {discovery_alg}:")
+    print(mean_values)
+for discovery_alg, std_values in summary_results['std'].items():
+    print(f"Standard deviation values for {discovery_alg}:")
+    print(std_values)
 
-
-# correlation_matrix = cor_analysis(fitness_results)
-# p_values = p_values(fitness_results)
-# find_outliers(fitness_results)
-
-
-
-# column wise -> top 3
-
+top_n_analysis(fitness_results)
+correlation_matrix = cor_analysis(fitness_results)
+p_values = p_values(fitness_results)
+find_outliers(fitness_results)
+get_best_connectors(fitness_results)

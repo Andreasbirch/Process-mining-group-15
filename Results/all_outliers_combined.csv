@@ -1,7 +1,8 @@
 ,ApplicationFrameHost,chrome,CoollePDFConverter,EXCEL,explorer,firefox,msedge,OneDrive,ONENOTE,OUTLOOK,PBIDesktop,SearchApp,ShellExperienceHost,Skype,Ssms,Teams,Model
-OneDrive,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,IM
-Skype,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,IM
-CoollePDFConverter,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,HM
-OneDrive,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,HM
-EXCEL,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,IMF
-OneDrive,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,IMF
+OneDrive,False,True,True,True,False,False,False,False,False,True,True,False,False,False,True,False,IM
+Skype,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,IM
+CoollePDFConverter,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,HM
+OneDrive,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,HM
+EXCEL,False,False,False,False,False,False,False,True,False,False,True,False,False,False,False,True,IMF
+OneDrive,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,IMF
+ShellExperienceHost,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,DEC
